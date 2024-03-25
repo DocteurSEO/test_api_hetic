@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      .heart{
+        font-size: 34px;
+      }
+
+      #control{ display: none;}
+</style>
+<body>
+
+  <div>
+    <p id="full">GO FullScreen</p>
+  </div>
+<span id="control">
+    <input type="text" id="name">
+    <div>
+    <div class="heart"></div>
+    <button id="validate"> Validate</button>
+
+</div>
+<br>
+<textarea name="" id="docker" cols="30" rows="20" placeholder="
+
+Écrivez un Dockerfile pour une application Node.js. 
+
+L'image doit être basée sur l'image officielle de Node,
+
+ copier les fichiers de l'application dans le répertoire de travail,
+  installer les dépendances,
+
+   exposer le port 3000 et démarrer l'application avec la commande 'node server.js'."></textarea> 
+   
+   <textarea name="" id="js" cols="30" rows="20" placeholder=" Expliquez ce que fait le code suivant en JavaScript :
+    async function afficherFilms() { 
+      const reponse = await fetch('http://example.com/films.json');
+       const films = await reponse.json(); console.log(films); }
+       
+       "></textarea> 
+       <textarea name="" id="node" cols="30" rows="20" placeholder="Créez une application Express qui gère deux routes : une route GET '/'
+        qui renvoie 'Hello World!' 
+        
+        et une route POST '/' 
+        
+        qui renvoie le corps de la requête reçue. 
+        
+        L'application doit écouter sur le port 3000."></textarea> <textarea name="" id="sql" cols="30" rows="20" placeholder="Exercice SQL : Écrivez des requêtes SQL pour les tâches suivantes : 1. Sélectionner toutes les colonnes de la table 'films'.
+
+
+ 2. Insérer une nouvelle ligne dans la table 'films' avec la valeur 'Brain' pour la colonne 'title'. 
+ 
+ 3. Compter le nombre total de lignes dans la table 'films'. 
+ 
+ 4. Créer une nouvelle table nommée 'notes' avec les colonnes 'id' (clé primaire, auto-incrémentée) et 'note' (varchar de 255 caractères).
+ "></textarea>
+"></textarea>
+</span>
+</body>
+<script src="./main.js" type="module"></script>
+</html>
