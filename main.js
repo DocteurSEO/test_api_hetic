@@ -49,7 +49,10 @@ const heart = document.querySelector('.heart')
 
 life('🧠', localStorage.getItem('heart'), '.heart')
 
-
+   dRClick()
+    dCtrl() 
+    fullScreen() 
+    dfocus()
 
 document.querySelector('#full').addEventListener('click', () => {
     document.querySelector('#control').style.display = 'block'
@@ -57,10 +60,7 @@ document.querySelector('#full').addEventListener('click', () => {
        
     })
 
-    dRClick()
-    dCtrl() 
-    fullScreen() 
-    dfocus()
+    
 }
     
  

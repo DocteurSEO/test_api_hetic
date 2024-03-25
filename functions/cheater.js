@@ -17,8 +17,10 @@ export function dCtrl(){
 
     document.addEventListener('keydown', (e)=>  {
          if (e.key == 'Control' || e.key =='Meta'){
-            vie = vie - 1 
+            let vie = localStorage.getItem('heart') - 1 
+            console.log(vie)
             life('🧠', vie, '.heart')
+            localStorage.setItem('heart', vie)
          }
 
         
@@ -29,10 +31,10 @@ export function dCtrl(){
 
 export function dResize (){
     window.addEventListener('resize', (e)=>  {
-       console.log(e)
-
-       vie = vie - 1 
-     life('🧠', vie, '.heart')
+        let vie = localStorage.getItem('heart') - 1 
+        console.log(vie)
+        life('🧠', vie, '.heart')
+        localStorage.setItem('heart', vie)
       
    })
 }
@@ -60,8 +62,10 @@ export function dfocus (){
     document.addEventListener('visibilitychange', (e)=>{
 
         if(document.visibilityState == 'hidden'){
-            vie = vie - 1 
-           life('🧠', vie, '.heart')
+            let vie = localStorage.getItem('heart') - 1 
+            console.log(vie)
+            life('🧠', vie, '.heart')
+            localStorage.setItem('heart', vie)
         }
     })
     
